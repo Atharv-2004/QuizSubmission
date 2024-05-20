@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="game.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div id="hud">
+            <!-- Added the question counter div -->
+            <div id="question-counter">Question 1 of 3</div>
+            <div id="progress-bar">
+                <div id="progress-bar-full"></div>
+            </div>
+            
+            <div id="score">Score: 0</div>
+        </div>
+        <h2 id="question">What is the answer to this question?</h2>
+        <div class="choices">
+            <div class="choice-container">
+                <div class="choice-prefix">A</div>
+                <div class="choice-text" data-number="1">Choice 1</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">B</div>
+                <div class="choice-text" data-number="2">Choice 2</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">C</div>
+                <div class="choice-text" data-number="3">Choice 3</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">D</div>
+                <div class="choice-text" data-number="4">Choice 4</div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

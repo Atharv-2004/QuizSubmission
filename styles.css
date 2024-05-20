@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #dae6eb;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #479bf5;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #007bff;
+    padding: 10px 70px;
+    font-size: 1.2rem;
+    color: #007bff;
+    background-color:white;
+    text-decoration: solid;
+    transition: background-color 0.3s ease;
+   
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+
+.game-container {
+    background: #dae6eb;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.choice-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color:white;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
+}
+
+.choice-container:hover {
+    /* background-color: #0056b3;
+    color: white;
+    transition: all 0.3s ease; */
+    box-shadow: 0 4px 8px rgba(0, 181, 247, 0.349);
+    transform: translateY(-2px);
+    background-color: #f0f0f0;
+    color: #000;
+}
+/* .choice-container:hover .choice-prefix{
+   background-color: white;
+   color:#0056b3;
+} */
+
+.choice-prefix{
+    background-color: #29b6f6;
+    color:#fff;
+    height: 30px;
+    padding:0%;
+    width: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 20px;
+    font-weight: bold;
+}
+.choice-text {
+   
+    flex-grow:1;
+    text-align :left;
+}
+
+
+
+.correct {
+    background-color: #28a745 !important;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+}
+#progress-bar {
+    height: 20px;
+    width: 60%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+    
+    order: 1;
+}
+
+#progress-bar-full {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    order: 2;
+}
