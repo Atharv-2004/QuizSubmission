@@ -1,13 +1,13 @@
-// // const question = document.getElementById('question');
+
 // alert("game.js is loaded");
 
 // const question = document.getElementById('question');
-// // rest of your code...
+
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const questionElement = document.getElementById('question');
     const choices = Array.from(document.getElementsByClassName('choice-text'));
-    const questionCounterText = document.getElementById('question-counter'); // Ensure this element exists in your HTML
+    const questionCounterText = document.getElementById('question-counter'); 
     const scoreText = document.getElementById('score');
     const progressBarFull = document.getElementById('progress-bar-full');
 
